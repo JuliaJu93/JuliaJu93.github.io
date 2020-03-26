@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+  font-family: "Caveat", cursive;
+  line-height: 2;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.7rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 1400px;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+
+h1, h2 {
+  letter-spacing: 0.5rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+img.mini {
+  margin: 1rem;
+  filter: hue-rotate(90deg);
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 3rem auto;
+  flex-wrap: wrap;
+}
+
+img.juka {
+ width: 40%;
+ margin-right: 4rem;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+a,
+li {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+@media (pointer: fine) {
+  a:hover {
+    color: #4e54f4;
+  }
+  
+  a:hover svg{
+    fill: #4e54f4;
+  }
+}
+
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 8px -16px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Content */
+.content {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 4rem;
+}
+
+.content img{
+  border-radius: 7%;
+}
+
+button, p, nav a {
+  font-size: 2.6rem;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  background-color: white;
+  margin: 2rem 5rem 2rem 1rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+@media (pointer: fine) {
+  .btn:hover {
+    color: #4e54f4;
+  }
+}
+/* Add a grey background color on mouse-over */
+
+
+/* Add a dark background color to the active button */
+.btn.active {
+ color: #4e54f4;
+}
+
+@media screen and (max-width: 980px)  {
+  html{
+    font-size: 100%;
+    text-align: center;
+  }
+  h1{
+   font-size: 3.5rem;
+  }
+  h2{
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+  }
+  div.aboutMe{
+    width: 90%;
+  }
+  img.juka{
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  .galleryHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  a, h2, #myBtnContainer, .container{
+    display: flex;
+    justify-content: center;
+  }
+  img.mini{
+    width: 36px;
+    height: 36px;
+  }
+  .btn, nav a, nav p{
+    font-size: 3rem;
+  }
+  .content{
+    margin-bottom: 1rem;
+  }
+  .mail p{
+    font-size: 2rem;
+  }
+ }
