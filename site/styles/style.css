@@ -1,18 +1,18 @@
 * {
   box-sizing: border-box;
-  font-family: "Caveat", cursive;
-  line-height: 2;
+  font-family: "Kurale", serif;
+  line-height: 1.5;
   margin: 0;
   text-decoration: none;
   color: black;
 }
 
-html{
+html {
   font-size: 62.5%;
 }
 
-body{
-  font-size: 1.7rem;
+body {
+  font-size: 1.5rem;
 }
 
 header {
@@ -24,8 +24,8 @@ header {
   flex-wrap: wrap;
 }
 
-h1, h2 {
-  letter-spacing: 0.5rem;
+h1 {
+  letter-spacing: 0.2rem;
 }
 
 header nav {
@@ -42,7 +42,6 @@ header ul {
 }
 
 img.mini {
-  margin: 1rem;
   filter: hue-rotate(90deg);
 }
 
@@ -55,9 +54,11 @@ article {
   flex-wrap: wrap;
 }
 
-img.juka {
- width: 40%;
- margin-right: 4rem;
+div.containerImg {
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  margin-right: 4rem;
 }
 
 .aboutMe {
@@ -67,11 +68,9 @@ img.juka {
   width: 40%;
 }
 
-.container{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 2rem;
+.aboutMe h2 {
+  margin: 2rem 0;
+  font-size: 2em;
 }
 
 a,
@@ -85,12 +84,11 @@ li {
   a:hover {
     color: #4e54f4;
   }
-  
-  a:hover svg{
+
+  a:hover svg {
     fill: #4e54f4;
   }
 }
-
 
 main {
   max-width: 1200px;
@@ -107,7 +105,6 @@ main {
   box-sizing: border-box;
 }
 
-/* Center website */
 .row {
   display: flex;
   flex-direction: row;
@@ -116,14 +113,12 @@ main {
   margin: 8px -16px;
 }
 
-/* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 33%;
-  display: none; /* Hide columns by default */
+  display: none; 
 }
 
-/* Content */
 .content {
   display: flex;
   justify-content: center;
@@ -132,20 +127,25 @@ main {
   margin-bottom: 4rem;
 }
 
-.content img{
+.content img {
   border-radius: 7%;
 }
 
-button, p, nav a {
-  font-size: 2.6rem;
+button,
+p,
+a,
+.aboutMe li {
+  font-size: 2rem;
 }
 
-/* The "show" class is added to the filtered elements */
+.aboutMe a {
+  margin: 2rem 0;
+}
+
 .show {
   display: block;
 }
 
-/* Style the buttons */
 .btn {
   border: none;
   outline: none;
@@ -160,53 +160,60 @@ button, p, nav a {
     color: #4e54f4;
   }
 }
-/* Add a grey background color on mouse-over */
 
-
-/* Add a dark background color to the active button */
 .btn.active {
- color: #4e54f4;
+  color: #4e54f4;
 }
 
-@media screen and (max-width: 980px)  {
-  html{
+@media screen and (max-width: 980px) {
+  html {
     font-size: 100%;
     text-align: center;
   }
-  h1{
-   font-size: 3.5rem;
+  h1 {
+    font-size: 3.5rem;
+    margin: 2rem;
+    letter-spacing: 0;
   }
-  h2{
+  h2 {
     font-size: 3rem;
     letter-spacing: 0.2rem;
   }
-  div.aboutMe{
+  div.containerImg {
     width: 90%;
   }
-  img.juka{
+  div.aboutMe {
     width: 90%;
+  }
+  img.juka {
     margin-bottom: 1rem;
   }
-  .galleryHeader{
+  .galleryHeader {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  a, h2, #myBtnContainer, .container{
+  a,
+  h2,
+  #myBtnContainer,
+  .container {
     display: flex;
     justify-content: center;
   }
-  img.mini{
+  img.mini {
     width: 36px;
     height: 36px;
   }
-  .btn, nav a, nav p{
-    font-size: 3rem;
+  .btn,
+  a,
+  nav p,
+  .container p {
+    font-size: 2.5rem;
   }
-  .content{
+  .content {
     margin-bottom: 1rem;
   }
-  .mail p{
+  .mail p {
     font-size: 2rem;
   }
- }
+}
