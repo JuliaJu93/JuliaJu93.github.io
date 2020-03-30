@@ -54,6 +54,10 @@ article {
   flex-wrap: wrap;
 }
 
+img.juka {
+  object-fit: contain;
+}
+
 div.containerImg {
   display: flex;
   justify-content: center;
